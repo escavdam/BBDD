@@ -49,3 +49,19 @@ User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/20100101 Firefox/
 Content-Type: application/x-www-form-urlencoded
 form_user=maria_90&form_pass=badbadbadnotgood&form_email=mariadelgado%gmail.com
 ```
+
+#### Respuesta
+Una respuesta HTTP consta de tres partes:
+- Una línea de estado, que especifica la versión del protocolo HTTP que se está utilizando, un código de estado y una descripción del estado.
+- Una cabecera, que contiene información adicional sobre la respuesta, como el tipo de contenido que se devuelve y la longitud del contenido.
+- Un cuerpo, que contiene los datos que se devuelven al cliente. El cuerpo de una respuesta HTTP es opcional y sólo se utiliza en ciertos casos, como cuando se devuelve un documento HTML.
+
+```http
+HTTP/1.1 200 OK
+Date: Mon, 23 May 2005 22:38:34 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 138
+Last-Modified: Wed, 08 Jan 2003 23:11:55 GMT
+Server: Apache/
+Connection: close
+```
