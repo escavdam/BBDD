@@ -22,6 +22,8 @@ Esos valores numéricos se pueden convertir facilmente a binario como 01000001, 
 
 Como vemos, surge una necesidad de categorizar los datos segun diferentes criterios para poder trabajar con ellos de manera mas eficiente.
 
+[+info codificación ASCII](https://www.ascii-code.com/ASCII)
+
 ## Tipos de datos
 
 Los tipos de datos que tenemos disponibles dependen de diversos factores, si estamos trabajando en un lenguaje de programación, en una base de datos, en un sistema operativo, etc.
@@ -102,6 +104,8 @@ Los enteros son números sin parte decimal, pueden ser positivos o negativos.
 >
 > Tu edad o numero de telefono son ejemplos de cosas reales que pueden ser abstraidas como enteros.
 
+Debemos tener en cuenta que los enteros pueden tener un rango de valores, por ejemplo, en JavaScript el rango de valores de un entero es de -2^53 a 2^53, mientras que en C# el rango de valores de un entero es de -2^31 a 2^31.
+
 ### Punto flotante
 Los números de punto flotante son números con parte decimal, pueden ser positivos o negativos.
 
@@ -170,11 +174,12 @@ a = "1"
 ## Variables
 Una variable es un espacio de memoria que se utiliza para almacenar un valor.
 
-Las variables tienen un nombre, un tipo de dato y un valor.
+Las variables tienen un nombre, un tipo de dato y un valor, este valor puede modificarse en cualquier momento por parte de nuestro código.
 
 ```javascript
 // JavaScript
 let a = 1
+a = a + 2
 ```
 
 ```python
@@ -190,7 +195,7 @@ int a = 1;
 ## Constantes
 Una constante es un espacio de memoria que se utiliza para almacenar un valor.
 
-Las constantes tienen un nombre, un tipo de dato y un valor.
+Las constantes tienen un nombre, un tipo de dato y un valor, pero estas no pueden ser modificadas, nos dará error.
 
 ```javascript
 // JavaScript
