@@ -145,3 +145,27 @@ let persona = {
     console.log(`Hola, me llamo ${this.nombre} y tengo ${this.edad} años`)
   }
 }
+
+persona.saludar() // Hola, me llamo Antonio y tengo 24 años
+```
+**TODOS** los datos que no sean primitivos, **son objetos** en JavaScript.
+
+**Recuerda**: Los objetos son el tipo de dato más importante de JavaScript, ya que nos permiten representar cualquier tipo de dato compuesto.
+
+### Arrays
+Los arrays son un tipo de dato especial, ya que son objetos que nos permiten almacenar una colección de datos.
+
+```javascript
+let a = [1, 2, 3, 4, 5]
+let b = ["a", "b", "c"]
+let c = [true, false, true]
+let d = [1, "a", true]
+```
+
+**Recuerda** que los arrays son objetos, por lo que podemos acceder a sus propiedades y métodos.
+
+```javascript
+let a = [1, 2, 3, 4, 5]
+console.log(a.length) // 5
+```
+
