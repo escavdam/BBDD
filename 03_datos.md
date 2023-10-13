@@ -207,3 +207,14 @@ const a = 1
 A = 1
 ```
 
+# Variables y constantes
+
+Para trabajar con datos en nuestro código, debemos almacenarlos en espacios de memoria, a los que llamamos variables y constantes.
+
+Además, dependiendo del lenguaje de programación que estemos utilizando, las variables y constantes pueden tener diferentes características, como por ejemplo:
+
+- **Mutabilidad**: Capacidad para cambiar de valor a lo largo de la ejecución del código.
+- **Tipado**: Capacidad para almacenar un tipo de dato concreto.
+- **Ámbito**: Pueden ser globales, o tener un ámbito limitado a un bloque (locales).
+- **Visibilidad**: Podemos especificar si son visibles desde otros bloques de código o no.
+- **Inicialización**: En algunos lenguajes deben ser inicializadas al declararlas o no.
