@@ -51,3 +51,18 @@ function saludar() {
   console.log(saludo)
 }
 ```
+
+## typeof
+
+Para saber el tipo de dato de una variable o constante, podemos usar el operador `typeof`.
+
+```javascript
+// JavaScript
+let a = 1
+let b = "hello"
+const c = true
+console.log(typeof a) // number
+console.log(typeof b) // string
+console.log(typeof c) // boolean
+```
+
