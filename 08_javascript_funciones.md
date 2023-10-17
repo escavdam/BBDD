@@ -1,6 +1,8 @@
 # Funciones
 
-## Funciones
+[MDN Guia](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions)
+
+[MDN Referencia](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions)
 
 Una función es un bloque de código que se puede ejecutar cuando se le llama. En JavaScript, las funciones se declaran con la palabra clave `function`.
 

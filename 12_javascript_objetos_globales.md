@@ -1,5 +1,7 @@
 # Objetos globales
 
+[MDN Referencia](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects)
+
 Los objetos globales son objetos que están disponibles en cualquier parte del código, son parte del lenguaje y no necesitan ser importados.
 
 Los objetos globales incluyen metodos y propiedades que nos permiten realizar tareas comunes, como por ejemplo:

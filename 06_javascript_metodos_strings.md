@@ -2,6 +2,7 @@
 
 Los strings son objetos, por lo que tienen propiedades y métodos.
 
+[Strings MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)
 ## Propiedades
 
 ### length

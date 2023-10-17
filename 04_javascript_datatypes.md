@@ -80,15 +80,14 @@ console.log(saludo)
 
 #### Null
 El tipo de dato null es un tipo de dato que solo puede tener un valor: `null`.
-Este tipo de dato se utiliza para indicar que una variable o constante no tiene valor, pero está declarada.
-
+El valor null se utiliza para indicar que una variable o constante **no** ha sido declarada
 ```javascript
 let a = null
 ```
 
 #### Undefined
 El tipo de dato undefined es un tipo de dato que solo puede tener un valor: `undefined`.
-Este tipo de dato se utiliza para indicar que una variable o constante **no** ha sido declarada.
+Este tipo de dato se utiliza para indicar que una variable o constante **no** tiene valor.
 
 ```javascript
 console.log(a)

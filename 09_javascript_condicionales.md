@@ -1,5 +1,10 @@
 # Condicionales
 
+Los elementos condicionales nos permiten ejecutar código en función de si se cumple o no una condición, alterando el flujo de ejecución del programa.
+
+
+[MDN Guia](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Control_de_flujo_y_manejo_de_errores)
+
 ## Condicional if
 
 ```javascript

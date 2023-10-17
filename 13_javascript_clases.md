@@ -1,5 +1,7 @@
 # Clases
 
+[MDN Referencia](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes)
+
 Las clases en JavaScript son una forma de crear objetos con los mismos atributos y métodos. Puedes pensar en una clase como una plantilla que define algo.
 
 Vamos a fijarnos en un ejemplo para entenderlo mejor.

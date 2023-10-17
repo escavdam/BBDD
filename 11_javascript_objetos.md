@@ -3,6 +3,8 @@
 Los objetos en javascript son colecciones de propiedades, que son pares de clave y valor.
 Además, los objetos pueden tener métodos, que son funciones que pertenecen al objeto.
 
+[MDN Guia](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects)
+
 ## Crear un objeto
 
 Crear un objeto es muy fácil, solo tenemos que declarar una variable y asignar sus propiedades entre llaves `{}`, separadas por comas.

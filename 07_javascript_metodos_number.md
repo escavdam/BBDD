@@ -2,6 +2,7 @@
 
 Los números son objetos, por lo que tienen propiedades y métodos.
 
+[Number MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number)
 ## Propiedades
 
 ### MAX_VALUE
