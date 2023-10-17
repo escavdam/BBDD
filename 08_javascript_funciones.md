@@ -6,6 +6,10 @@ Una función es un bloque de código que se puede ejecutar cuando se le llama. E
 
 Cuando se declara una función, se le puede dar un nombre, que se utiliza para llamar a la función junto a los paréntesis `()`.
 
+Las funciones son un aspecto clave de la programación, nos ayudan a reutilizar código y a hacerlo más legible.
+
+Además, al aislar el código en funciones, podemos hacer que este sea más fácil de probar y cambiar más adelante.
+
 ```javascript
 function myFunction() { //declaración de la función
   // código
