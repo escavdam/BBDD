@@ -39,16 +39,7 @@ Datos primitivos en Python:
 - `bool` - Booleanos
 - `str` - Cadenas de caracteres
 - `None` - Valor nulo
-- `bytes` - Secuencia de bytes
-- `bytearray` - Secuencia de bytes modificable
 - `complex` - Números complejos
-- `tuple` - Tuplas
-- `frozenset` - Conjunto inmutable
-- `set` - Conjunto
-- `list` - Lista
-- `dict` - Diccionario
-- `range` - Rango
-- `memoryview` - Vista de memoria
 
 Datos primitivos en JavaScript:
 - `undefined` - Valor indefinido
@@ -58,7 +49,6 @@ Datos primitivos en JavaScript:
 - `string` - Cadena de caracteres
 - `symbol` - Símbolo
 - `bigint` - Entero de precisión arbitraria
-- `object` - Objeto
 
 Datos primitivos en C#:
 - `bool` - Booleano
@@ -69,10 +59,6 @@ Datos primitivos en C#:
 - `double` - Punto flotante de 64 bits
 - `float` - Punto flotante de 32 bits
 - `int` - Entero con signo de 32 bits
-- `uint` - Entero sin signo de 32 bits
-- `long` - Entero con signo de 64 bits
-- `ulong` - Entero sin signo de 64 bits
-- `object` - Objeto
 
 ### Datos estructurados
 
