@@ -59,239 +59,56 @@ switch (a) {
 }
 ```
 
-## Operador ternario
-
 ```javascript
-let a = 1
+let dia = "Lunes"
 
-let b = a > 2 ? "a es mayor que 2" : "a es menor o igual que 2"
-console.log(b)
-```
-
-## Operadores lógicos
-Muchas veces necesitaremos comprobar más de una condición a la vez. Para ello, podemos utilizar los operadores lógicos `&&` (AND) y `||` (OR).
-
-
-### Operador AND
-
-```javascript
-let a = 1
-let b = 2
-
-if (a > 0 && b > 0) {
-  console.log("a y b son mayores que 0")
+switch (dia) {
+  case "Lunes":
+  case "Martes":
+  case "Miercoles":
+  case "Jueves":
+  case "Viernes":
+    console.log("Hay que trabajar hoy")
+    break
+  case "Sabado":
+  case "Domingo":
+    console.log("Es un día festivo")
+    break
+  default:
+    console.log("No es un día válido")
 }
 ```
 
-### Operador OR
+## Gestión de errores
+
+Podemos gestionar los errores que se producen en nuestro programa utilizando un bloque `try-catch`.
+
+El bloque try se utiliza para envolver el código que puede producir un error. Si se produce un error, el bloque catch capturará el error y nos permitirá gestionarlo y evitar que el programa se detenga, lanzar un nuevo error o realizar la acción que consideremos oportuna.
 
 ```javascript
-let a = 1
-let b = 2
+  let a = 1
+  let b = 2
+try {
 
-if (a > 0 || b > 0) {
-  console.log("a o b son mayores que 0")
+  if (a > b) {
+    console.log("a es mayor que b")
+  }
+} catch (error) {
+  console.log(error)
 }
 ```
 
-## Operadores de comparación
+## Lanzamiento de errores
 
-### Operador de igualdad `==` y desigualdad `!=`
-
-```javascript
-let a = 1
-let b = 2
-
-if (a == b) {
-  console.log("a es igual que b")
-}
-```
-
-### Operador de desigualdad
+Podemos lanzar un error utilizando la palabra clave `throw`. Esto nos permite detener la ejecución del programa y mostrar un mensaje de error personalizado. Debemos usarlo cuando sucede una situación que no debería suceder nunca en nuestro programa.
 
 ```javascript
 let a = 1
 let b = 2
 
-if (a != b) {
-  console.log("a es distinto que b")
-}
-```
-
-### Operador de igualdad estricta `===` y desigualdad estricta `!==`
-
-```javascript
-let a = 1
-let b = "1"
-
-if (a === b) {
-  console.log("a es igual que b")
-}
-```
-
-### Operador de desigualdad estricta
-
-```javascript
-let a = 1
-let b = "1"
-
-if (a !== b) {
-  console.log("a es distinto que b")
-}
-```
-
-### Operador mayor que `>` y menor que `<`
-
-```javascript
-let a = 1
-let b = 2
-
-if (a < b) {
-  console.log("a es menor que b")
-}
-```
-
-### Operador mayor o igual que `>=` y menor o igual que `<=`
-
-```javascript
-let a = 1
-let b = 2
-
-if (a <= b) {
-  console.log("a es menor o igual que b")
-}
-```
-
-## Operadores aritméticos
-
-### Operador suma `+`
-
-```javascript
-let a = 1
-let b = 2
-
-let c = a + b
-console.log(c) // 3
-```
-
-### Operador resta `-`
-
-```javascript
-let a = 1
-let b = 2
-
-let c = a - b
-console.log(c) // -1
-```
-
-### Operador multiplicación `*`
-
-```javascript
-let a = 1
-let b = 2
-
-let c = a * b
-console.log(c) // 2
-```
-
-### Operador división `/`
-
-```javascript
-let a = 1
-let b = 2
-
-let c = a / b
-console.log(c) // 0.5
-```
-
-### Operador módulo `%`
-
-```javascript
-let a = 1
-let b = 2
-let c = 3
-
-let d = a + b + c
-
-if (d % 2 == 0) {
-  console.log("La suma de a, b y c es par")
+if (a > b) {
+  console.log("a es mayor que b")
 } else {
-  console.log("La suma de a, b y c es impar")
+  throw new Error("a no es mayor que b")
 }
-```
-
-### Operador de incremento `++`
-
-```javascript
-let a = 1
-
-a++
-console.log(a) // 2
-```
-
-### Operador de decremento `--`
-
-```javascript
-let a = 1
-
-a--
-console.log(a) // 0
-```
-
-## Operadores de asignación
-
-### Operador de asignación simple `=`
-
-```javascript
-let a = 1
-```
-
-### Operador de asignación de suma `+=`
-
-```javascript
-let a = 1
-let b = 2
-
-a += b
-console.log(a) // 3
-```
-
-### Operador de asignación de resta `-=`
-
-```javascript
-let a = 1
-let b = 2
-
-a -= b
-console.log(a) // -1
-```
-
-### Operador de asignación de multiplicación `*=`
-
-```javascript
-let a = 1
-
-a *= 2
-
-console.log(a) // 2
-```
-
-### Operador de asignación de división `/=`
-
-```javascript
-let a = 1
-
-a /= 2
-
-console.log(a) // 0.5
-```
-
-### Operador de asignación de módulo `%=`
-
-```javascript
-let a = 1
-
-a %= 2
-
-console.log(a) // 1
 ```
