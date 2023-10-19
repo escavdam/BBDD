@@ -85,8 +85,29 @@ devuelva una cadena como esta:
 # Ejercicio 18
 
 1. Crea el archivo `ejercicio_18.js`.
-2. Crea una función que cambie las vocales de un string por la vocal que pases como argumento a la misma. Por ejemplo, si le pasamos "a" a la función, debería devolver:
+2. Crea una función que cambie las vocales de un string por la vocal que pases como argumento a la misma. Por ejemplo, si le pasamos "hola mundo" como string a modificar y "a" como caracter a introducir, debería devolver "hala manda".
+
+# Ejercicio 19
+
+1. Crea el archivo `ejercicio_19.js`.
+2. Copia el siguiente código en tu archivo:
 
 ```javascript
-"hola mundo" // "hala manda"
+const cadena = "🦇🎃🎃🦇🦇🎃🦇🎃🎃🎃🦇🦇🎃🎃"
 ```
+
+1. Crea una funcion a la que le pases una cadena y cuente el número de calabazas y murciélagos que hay en la misma y las muestre en consola.
+
+# Ejercicio 20
+
+1. Crea el archivo `ejercicio_20.js`.
+2. Copia el siguiente código en tu archivo:
+
+```javascript
+let cadena = "“It is said that your life flashes before your eyes just before you die. That is true, it’s called life.”"
+```
+
+3. Haz una funcion que cuente cuantas veces se repite la palabra `life` en la cadena de texto y devuelva el resultado.
+
+
+
