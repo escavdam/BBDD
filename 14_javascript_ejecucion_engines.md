@@ -24,13 +24,32 @@ Una vez instalado, podemos ejecutar un script de JavaScript con Nodejs de la sig
 node nombre_del_archivo.js
 ```
 
+> **Recuerda** que debes estar en el mismo directorio que el archivo que quieres ejecutar con la terminal, o usar una ruta completa hasta el archivo.
+
 ## Ejecutar código JavaScript en el navegador
 
 Para ejecutar código JavaScript en el navegador, podemos abrir la consola de desarrollador del navegador con F12, ir a la seccion de consola y escribir el código JavaScript que queramos ejecutar linea a linea.
 
 Adicionalmente, podemos programar en IDEs virtuales como [CodePen](https://codepen.io/pen/), [JSFiddle](https://jsfiddle.net/) o [JSBin](https://jsbin.com/?html,output), donde solo hay que abrir la web, y comenzar a programar en el lenguaje que deseamos.
 
-## Ejecutar código JavaScript en Visual Studio Code
+## La forma clásica (HTML+JS)
 
-Visual Studio Code nos permite ejecutar código JavaScript directamente en el editor. Para ello, podemos instalar la extensión [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) y ejecutar el código deseado.
+La manera más clásica de lanzar un script es mediante un archivo `html` con el siguiente contenido:
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titulo</title>
+</head>
+<body>
+  <script src="mi_script.js"></script>
+</body>
+</html>
+```
+
+En este caso, cargamos el archivo desde un archivo html mediante el tag `<script>`
+
+Debes subir a neocities u otro hosting tus archivos html y js, o utilizar la extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) de Visual Studio Code para ejecutar tu código en local, instalalo y luego dale click en "Go Live" en la esquina inferior derecha de tu editor o busca el comando con F1, escribiendo "live server" y seleccionando la opción "Open with live server".
