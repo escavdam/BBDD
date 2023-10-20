@@ -6,27 +6,8 @@
 2. Copia esto en tu archivo:
 
 ```javascript
-function getRandomList(){
-    const lista = ['🧁', '🍠', '🍡', '🥟', '🥑', '🍾', ' 🍎'];
-    let output = []
-    const len = Math.floor(Math.random()*100)
-
-    for(let i = 0; i < 40; i++){
-        const val = Math.random()*100
-        if(val > 50){
-            output.push(getRandomElement(lista))    
-        }else{
-            output.push("💣")
-        }
-    }
-function getRandomElement(arr){
-  return arr[Math.floor(Math.random() * lista.length)]
-}
-  return output
-}
-
-let lista = getRandomList()
-let comida = []  
+let lista = ['🧁', '💣', '🍠', '💣', '🍡', '💣', '🥟', '💣', '🥑', '💣', '🍾', '💣', ' 🍎', '💣']
+let comida = []
 ```
 3. En esta práctica, debes hacer un programa que recorra el array "lista", y almacenar en el array "comida" todos los elementos que no tengan el valor '💣'. Debes usar un bucle for, pero no puedes hacer comparaciones que hagan uso del valor '💣'.
 
