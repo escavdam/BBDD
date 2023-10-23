@@ -32,7 +32,7 @@ Para ejecutar código JavaScript en el navegador, podemos abrir la consola de de
 
 Adicionalmente, podemos programar en IDEs virtuales como [CodePen](https://codepen.io/pen/), [JSFiddle](https://jsfiddle.net/) o [JSBin](https://jsbin.com/?html,output), donde solo hay que abrir la web, y comenzar a programar en el lenguaje que deseamos.
 
-## La forma clásica (HTML+JS)
+## La forma clásica (Solo HTML)
 
 La manera más clásica de lanzar un script es mediante un archivo `html` con el siguiente contenido:
 
@@ -45,11 +45,35 @@ La manera más clásica de lanzar un script es mediante un archivo `html` con el
   <title>Titulo</title>
 </head>
 <body>
-  <script src="mi_script.js"></script>
+  <script>
+    console.log("Hola mundo")
+    //Pon aqui tu código
+  </script>
 </body>
 </html>
 ```
 
-En este caso, cargamos el archivo desde un archivo html mediante el tag `<script>`
+En este caso, podemos escribir directamente el código JavaScript en el archivo `html` entre las etiquetas `<script>` y `</script>`
+
+## La forma clásica (HTML y JS)
+
+Muy similar al anterior, pero cargamos el archivo JavaScript desde un archivo externo:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titulo</title>
+</head>
+<body>
+  <script>
+    console.log("Hola mundo")
+    //Pon aqui tu código
+  </script>
+</body>
+</html>
+```
 
 Debes subir a neocities u otro hosting tus archivos html y js, o utilizar la extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) de Visual Studio Code para ejecutar tu código en local, instalalo y luego dale click en "Go Live" en la esquina inferior derecha de tu editor o busca el comando con F1, escribiendo "live server" y seleccionando la opción "Open with live server".
