@@ -109,3 +109,39 @@ console.log(usuario == usuario2) // false
 
 ```
 
+## Métodos de objetos
+
+[MDN Guia](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects)
+
+Hemos visto como los objetos pueden tener propiedades:
+
+```javascript
+let usuario = {
+  nombre: "Juan",
+  edad: 25,
+  profesion: "Estudiante"
+}
+
+console.log(`Hola soy ${usuario.nombre}, tengo ${edad} y soy ${profesion}`)
+```
+
+Además, los objetos pueden tener métodos, que son funciones que **pertenecen** al objeto.
+
+```javascript
+let usuario = {
+  nombre: "Juan",
+  apellidos: "García",
+  edad: 25,
+  profesión: "Game Dev",
+  saludar: function() {
+        console.log(`Hola, me llamo ${this.nombre}, tengo ${this.edad} años y soy ${this.profesion}`)
+    }
+  cumplirAños: function() {
+        this.edad++
+    }
+}
+
+usuario.saludar() // Hola, me llamo Juan, tengo 25 años y soy Game Dev
+usuario.cumplirAños()
+usuario.saludar() // Hola, me llamo Juan, tengo 26 años y soy Game Dev
+```
