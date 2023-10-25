@@ -68,10 +68,7 @@ Muy similar al anterior, pero cargamos el archivo JavaScript desde un archivo ex
   <title>Titulo</title>
 </head>
 <body>
-  <script>
-    console.log("Hola mundo")
-    //Pon aqui tu código
-  </script>
+  <script src="/script.js"></script>
 </body>
 </html>
 ```
