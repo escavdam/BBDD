@@ -79,3 +79,4 @@ Los operadores de cadena nos permiten concatenar cadenas de texto.
 | --- | --- | --- |
 | `+` | Concatenación | `"hola" + " " + "mundo"` |
 | `+=` | Concatenación de asignación | `a += "mundo"` |
+
