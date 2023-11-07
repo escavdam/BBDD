@@ -1,4 +1,4 @@
-# DOM
+# DOM (Document Object Model)
 
 El DOM es la representación del documento HTML en forma de árbol, generada por el navegador, que se puede modificar con JavaScript para cambiar dinámicamente los contenidos y aspecto de la página web.
 
