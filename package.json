@@ -4,7 +4,8 @@
   "description": "En *Bases de datos* tratareis principalmente con el backend de las aplicaciones, es decir, con la parte que se encarga de almacenar, recuperar datos, procesarlos y servir respuestas al cliente.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vitepress dev materia",
+    "build": "vitepress build materia"
   },
   "repository": {
     "type": "git",
