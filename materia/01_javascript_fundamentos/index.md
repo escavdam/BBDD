@@ -68,7 +68,7 @@ Como declarar objetos y acceder a sus propiedades.
 
 Los objetos globales nos permiten acceder a funcionalidades del navegador o entorno.
 
-## [Date](21_date.md)
+## [Date](21_Date.md)
 
 El objeto Date nos permite trabajar con fechas y horas.
 
@@ -88,6 +88,6 @@ Los métodos más comunes de los arrays
 
 Los intervalos nos permiten ejecutar una función cada cierto tiempo.
 
-## [DOM](20_dom.md)
+## [DOM](20_DOM.md)
 
 El DOM (Document Object Model) es una API que nos permite acceder y modificar el contenido de un documento HTML.
