@@ -1,2 +1,3 @@
 node_modules
 materia/.vitepress/cache
+materia/.vitepress/dist
