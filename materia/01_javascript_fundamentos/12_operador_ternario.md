@@ -1,5 +1,7 @@
 ## Operador ternario
 
+[MDN: Operador condicional (ternario)](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+
 Muchas veces encontraremos este patron de código:
 
 ```javascript

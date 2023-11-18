@@ -1,4 +1,5 @@
 # Variables y constantes
+
 Las variables y constantes son espacios de memoria que se utilizan para almacenar un valor y poderlo procesar.
 
 Estas tienen un **nombre**, un **tipo** de dato y un **valor** que debemos asignar.
@@ -26,6 +27,9 @@ c = false // esto dara error
 ```
 
 # Tipos de datos
+
+[MDN datatypes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+
 Ya hemos visto que dependiendo del contexto en que nos encontremos, los tipos de datos pueden ser diferentes. En JavaScript encontraremos la siguiente clasificación de datos:
 
 - Primitivos

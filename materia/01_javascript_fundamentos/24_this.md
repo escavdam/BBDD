@@ -1,5 +1,7 @@
 # This
 
+[MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/this)
+
 this es una palabra reservada de javascript que hace referencia al objeto que esta ejecutando el código actual, es decir, hace referencia al objeto que contiene el código.
 
 # Contexto global

@@ -1,5 +1,9 @@
 # Variables y constantes en JavaScript
 
+[MDN const](https://developer.mozilla.org/es/docs/Glossary/Constant)
+[MDN var](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/var)
+[MDN let](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/let)
+
 Ahora que sabemos los tipos de datos que podemos encontrar en JavaScript, vamos a ver como podemos almacenarlos en variables y constantes para usarlos en nuestro código.
 
 Básicamente, podemos crear datos de tres formas:

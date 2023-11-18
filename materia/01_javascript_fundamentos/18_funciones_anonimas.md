@@ -1,5 +1,7 @@
 # Funciones anónimas
 
+[MDN Funciones anonimas](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
 Una función anónima es una función que no tiene nombre. Se utilizan a menudo como valores de otras funciones, como en el siguiente ejemplo:
 
 ```javascript

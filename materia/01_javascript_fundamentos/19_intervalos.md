@@ -1,5 +1,7 @@
 # Intervalos
 
+[MDN setInterval](https://developer.mozilla.org/es/docs/Web/API/WindowTimers/setInterval)
+
 En JavaScript, podemos ejecutar código de forma repetida usando intervalos.
 
 ## `setInterval()`
@@ -24,6 +26,10 @@ let intervalo = setInterval(() => {
 
 clearInterval(intervalo)
 ```
+
+# Timeouts
+
+[MDN setTimeout](https://developer.mozilla.org/es/docs/Web/API/WindowTimers/setTimeout)
 
 ## `setTimeout()`
 

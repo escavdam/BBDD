@@ -1,5 +1,7 @@
 # DOM (Document Object Model)
 
+[MDN DOM](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction)
+
 El DOM es la representación del documento HTML en forma de árbol, generada por el navegador, que se puede modificar con JavaScript para cambiar dinámicamente los contenidos y aspecto de la página web.
 
 Una web no es más que un documento HTML que el navegador interpreta y muestra en pantalla. El DOM es la representación de ese documento en forma de árbol, que se puede modificar con JavaScript para cambiar dinámicamente los contenidos y aspecto de la página web.

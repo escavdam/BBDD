@@ -1,5 +1,7 @@
 # Eventos
 
+[MDN Eventos](https://developer.mozilla.org/es/docs/Web/Events)
+
 Podemos utilizar eventos de diferentes formas, la más común es utilizando el atributo `on` en el elemento HTML que queremos que tenga un evento y asignarle una función.
 
 ```html
