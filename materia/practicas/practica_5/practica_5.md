@@ -1,5 +1,6 @@
 ## Ejercicio 
 
+> Haremos estas practicas en clase! No os preocupeis de ellas en casa
 
 ## Ejercicio 21
 

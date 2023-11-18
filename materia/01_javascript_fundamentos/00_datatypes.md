@@ -1,6 +1,4 @@
-# Fundamentos de JavaScript
-
-## Variables y constantes
+# Variables y constantes
 Las variables y constantes son espacios de memoria que se utilizan para almacenar un valor y poderlo procesar.
 
 Estas tienen un **nombre**, un **tipo** de dato y un **valor** que debemos asignar.
@@ -27,7 +25,7 @@ b = "hello"
 c = false // esto dara error
 ```
 
-## Tipos de datos
+# Tipos de datos
 Ya hemos visto que dependiendo del contexto en que nos encontremos, los tipos de datos pueden ser diferentes. En JavaScript encontraremos la siguiente clasificación de datos:
 
 - Primitivos
@@ -40,11 +38,12 @@ Ya hemos visto que dependiendo del contexto en que nos encontremos, los tipos de
   - BigInt
 - Compuestos
   - Object
+  - Array
 
-### Primitivos
+## Primitivos
 Vamos a ver los datos básicos de JavaScript, los primitivos.
 
-#### Boolean
+### Boolean
 El tipo de dato booleano es un tipo de dato que solo puede tener dos valores: `true` o `false`.
 
 ```javascript
@@ -52,7 +51,7 @@ let a = true
 let b = false
 ```
 
-#### Number
+### Number
 El tipo de dato numérico es un tipo de dato que puede tener cualquier valor numérico, ya sea entero o decimal.
 
 ```javascript
@@ -60,7 +59,7 @@ let a = 1
 let b = 1.5
 ```
 
-#### String
+### String
 El tipo de dato string es un tipo de dato que puede tener cualquier valor de texto.
 
 ```javascript
@@ -78,14 +77,14 @@ let saludo = `hello ${nombre}`
 console.log(saludo)
 ```
 
-#### Null
+### Null
 El tipo de dato null es un tipo de dato que solo puede tener un valor: `null`.
 El valor null se utiliza para indicar que una variable o constante **no** ha sido declarada
 ```javascript
 let a = null
 ```
 
-#### Undefined
+### Undefined
 El tipo de dato undefined es un tipo de dato que solo puede tener un valor: `undefined`.
 Este tipo de dato se utiliza para indicar que una variable o constante **no** tiene valor.
 
@@ -93,23 +92,23 @@ Este tipo de dato se utiliza para indicar que una variable o constante **no** ti
 console.log(a)
 ```
 
-#### Symbol
+### Symbol
 El tipo de dato symbol es un tipo de dato que se utiliza para crear identificadores únicos.
 
 Este dato se utiliza en casos muy concretos, como por ejemplo, para crear propiedades privadas en los objetos.
 
 Por ahora, no os preocupeis demasiado por el.
 
-#### BigInt
+### BigInt
 El tipo de dato bigint es un tipo de dato que se utiliza para representar números enteros muy grandes.
 
 Si trabajas en un proyecto donde tengas que trabajar con números muy grandes, puede que te sea útil.
 
-### Datos compuestos
+## Datos compuestos
 JavaScript solo tiene un tipo de dato compuesto, el objeto.
 Cualquier otro tipo de dato que no sea primitivo, es un objeto en JavaScript.
 
-#### Object
+### Object
 El tipo de dato object es un tipo de dato que se utiliza para representar cualquier tipo de dato compuesto.
 
 Utiliza una estructura de clave-valor, donde la clave es un string y el valor puede ser cualquier tipo de dato.
