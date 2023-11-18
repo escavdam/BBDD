@@ -28,6 +28,6 @@ Mas ejercicios de leetcoding para clase :)
 
 Vamos a crear un clicker incremental que guarde el progreso en el navegador usando localStorage.
 
-## [Práctica 7](/practicas/practica_7/practica_7.md)
+## [Práctica 7](/practicas/practica_7/eventos_javascript.md)
 
 Ejercicio en el que usaremos `eventos html`, `addEventListener` y `event handlers`.

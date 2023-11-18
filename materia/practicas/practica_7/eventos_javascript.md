@@ -6,8 +6,6 @@ Deadline: Domingo 26 de Noviembre
 
 Hasta ahora, hemos estado trabajando con los eventos que proporciona el navegador llamando a nuestras funciones desde el HTML, pero también podemos asignar eventos directamente desde JavaScript.
 
-Usa [los apuntes](materia\01_javascript_fundamentos\25_eventos.md) de clase para hacer la siguiente aplicación:
-
 1. En el html necesitaremos:
     - Un h1 con el texto "Eventos de JavaScript"
     - Un parrafo con el texto "Tenemos tres formas de asignar eventos desde JavaScript:"
