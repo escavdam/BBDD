@@ -2,21 +2,21 @@
 
 Vamos a aprender los aspectos básicos del lenguaje JavaScript.
 
-## ⚗️ [Datatypes](04_datatypes.md)
+## ⚗️ [Datatypes](./00_datatypes.md)
 
 Entendiendo los tipos de datos básicos de JavaScript y como almacenarlos en variables.
 
 *Conceptos:* `string` `number` `boolean` `null` `undefined` `symbol` `object`
 
-## 📦 [Variables](05_const_var_let.md)
+## 📦 [Variables](./05_const_var_let.md)
 
 Como declarar y asignar valores a variables en JavaScript. 
 
 *Conceptos:* `const` `var` `let`
-
+<!-- 
 ## 😱 [Error en floats](22_error_de_floats.md)
 
-Los números en coma flotante no son exactos, aqui puedes ver formas de evitar errores.
+Los números en coma flotante no son exactos, aqui puedes ver formas de evitar errores. -->
 
 ## 🛹 [Funciones declaradas](08_funciones.md)
 
@@ -26,7 +26,7 @@ Como declarar e invocar funciones en JavaScript
 
 ## 😶‍🌫️ [Funciones anonimas](18_funciones_anonimas.md)
 
-Las funciones anónimas nos permiten declarar funciones sin nombre, que podemos asignar a variables o pasar como parámetros a funciones.
+Las funciones anónimas nos permiten declarar funciones sin nombre, que podemos pasar como parámetros a funciones.
 
 *Conceptos:* `() => {}`
 

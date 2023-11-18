@@ -1,6 +1,6 @@
 # Intro a los datos y web
 
-## [Introducción](/00_introduccion/01_introduccion.md)
+##  [Introducción](/00_introduccion/01_introduccion.md)
   
 Algunos conceptos básicos de los que tratamos los primeros dias de clase
 

@@ -1,5 +1,7 @@
 # Practica 1
+
 ## Repositorios locales
+
 En esta práctica vamos a empezar a configurar nuestros equipos, a crear un repositorio local y a trabajar con él.
 
 Cuando acabes la práctica, deberías tener una idea más clara de cómo funciona Git, y de cómo podemos empezar a integrarlo en nuestro flujo de trabajo 💪
