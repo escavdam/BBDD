@@ -4,7 +4,7 @@
 
 Los eventos son acciones que ocurren en el navegador, como hacer click en un botón, escribir en un input, mover el ratón, etc. El navegador puede vigilar estos eventos y ejecutar código cuando estos ocurren.
 
-# Eventos en HTML
+## Eventos en HTML
 
 Podemos utilizar eventos de diferentes formas, la más común al empezar es utilizando el evento `on` seguido de su accion en el elemento HTML al que queremos asignar un evento, `onclick`, `oninput`, `onchange` son ejemplos de eventos que el navegador puede vigilar. Cuando estos eventos tienen lugar, se ejecutará el código que hayamos asignado a la propiedad `on` del elemento HTML.
 
