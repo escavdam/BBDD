@@ -91,3 +91,7 @@ Los intervalos nos permiten ejecutar una función cada cierto tiempo.
 ## 🌲 [DOM](20_DOM.md)
 
 El DOM (Document Object Model) es una API que nos permite acceder y modificar el contenido de un documento HTML.
+
+## 👀 [Eventos](25_eventos.md)
+
+Los eventos nos permiten ejecutar código cuando ocurren ciertas acciones en el navegador.
