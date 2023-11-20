@@ -22,6 +22,6 @@ Crea un proyecto en tu repositorio de GitHub llamado `practica_7` y crea un `ind
 >
 
 1. Añade un evento al botón "addEventListener" que edite el parrafo inferior con el texto "Has hecho click en el botón con addEventListener", debes hacerlo utilizando el método `addEventListener`.
-2. Añade un evento al botón "Event handler" que edite el parrafo inferior con el texto "Has hecho click en el botón con event handler", debes hacerlo utilizando el atributo `on` directamente en el elemento HTML.
+2. Añade un evento al botón "Event handler" que edite el parrafo inferior con el texto "Has hecho click en el botón con event handler", debes hacerlo utilizando un `event handler` directamente en js.
 3. Cambia el color de fondo del parrafo inferior en cada una de las diferentes respuestas que puede tomar.
 4. Centra los elementos en la pagina.
