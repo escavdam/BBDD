@@ -10,11 +10,21 @@ Vamos a comenzar a trabajar con JavaScript, crea un repositorio en tu cuenta de 
 2. Crea una **variable** llamada `nombre` y asígnale tu nombre.
 3. Muestra el valor de la variable por consola.
 
+```js
+let nombre = "Juan"
+console.log(nombre)
+```
+
 ## Ejercicio 2
 
 1. Crea un archivo llamado `02_ejercicio.js`.
 2. Crea una **variable** llamada `valor` y asígnale un valor.
 3. Muestra el *doble* de la variable por consola.
+
+```js
+let valor = 5
+console.log(valor * 2)
+```
 
 ## Ejercicio 3
 
@@ -25,9 +35,21 @@ Vamos a comenzar a trabajar con JavaScript, crea un repositorio en tu cuenta de 
    - `ciudad`: Tu ciudad.
 
 3. Crea una variable llamada "saludo" y asígnale un valor que sea una **plantilla de texto** que incluya las propiedades del objeto `usuario`, de manera que al mostrar el valor de la variable por consola se muestre el siguiente texto con los datos de vuestro objeto:
-    ```
-    Hola, me llamo <nombre>, tengo <edad> años y soy de <ciudad>.
-    ```
+
+```
+Hola, me llamo <nombre>, tengo <edad> años y soy de <ciudad>.
+```
+
+```js
+let usuario = {
+    nombre: "Juan",
+    edad: 32,
+    ciudad: "Granada"
+}
+
+let saludo = `Hola, me llamo ${usuario.nombre}, tengo ${usuario.edad} años y soy de ${usuario.ciudad}.`
+console.log(saludo)
+```
 
 ## Ejercicio 4
 
@@ -40,6 +62,36 @@ Vamos a comenzar a trabajar con JavaScript, crea un repositorio en tu cuenta de 
    - Crea una función llamada `doble` que reciba un parámetro y devuelva el doble del mismo.
 3. Muestra los resultados de las funciones por consola.
 
+```js
+function sumar(a, b){
+    return a + b;
+}
+
+function restar(a, b){
+    return a - b;
+}
+
+function multiplicar(a, b){
+    return a * b;
+}
+
+function dividir(a, b){
+    return a / b;
+}
+
+function doble(a){
+    return a * 2;
+}
+
+//callback
+function calc(a, b, accion){
+    return accion(a, b);
+}
+
+console.log(calc(2, 3, sumar));
+```
+
+
 ## Ejercicio 5
 
 1. Crea un archivo llamado `05_ejercicio.js`.
@@ -51,6 +103,12 @@ Vamos a comenzar a trabajar con JavaScript, crea un repositorio en tu cuenta de 
 >
 > A = π * r²
 
+```js
+function areaCirculo_aux(radio){
+    return 3.1416 * radio * radio;
+}
+```
+
 ## Ejercicio 6
 
 1. Crea un archivo llamado `06_ejercicio.js`.
@@ -61,6 +119,12 @@ Vamos a comenzar a trabajar con JavaScript, crea un repositorio en tu cuenta de 
 >
 > F = (C * 1.8) + 32
 
+```js
+function celsiusToFahrenheit(celsius) {
+  return (celsius * 1.8) + 32;
+}
+```
+
 ## Ejercicio 7
 
 1. Crea un archivo llamado `07_ejercicio.js`.
@@ -68,6 +132,12 @@ Vamos a comenzar a trabajar con JavaScript, crea un repositorio en tu cuenta de 
 3. La función mostrará por consola el resultado de calcular el precio de un producto con IVA con el valor que le hemos pasado y devolverá el mismo valor.
 
 > **Recuerda** que el IVA se calcula aplicando un 21% al precio sin IVA.
+
+```js
+function calcularPrecioConIva(precioSinIva) {
+  return precioSinIva * 1.21;
+}
+```
 
 ## Ejercicio 8
 
@@ -87,6 +157,12 @@ El resultado debería ser el siguiente:
 8
 9
 10
+```
+
+```js
+for(let i = 1; i <= 10; i++){
+    console.log(i);
+}
 ```
 
 ## Ejercicio 9
@@ -109,6 +185,12 @@ El resultado debería ser el siguiente:
 1
 ```
 
+```js
+for(let i = 10; i >= 1; i--){
+    console.log(i);
+}
+```
+
 ## Ejercicio 10
 
 1. Crea un archivo llamado `10_ejercicio.js`.
@@ -127,4 +209,10 @@ El resultado debería ser el siguiente:
 -3
 -2
 -1
+```
+
+```js
+for(let i = -10; i <= 1; i++){
+    console.log(i);
+}
 ```
