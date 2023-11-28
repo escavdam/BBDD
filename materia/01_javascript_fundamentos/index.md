@@ -64,34 +64,58 @@ Como declarar clases e instanciar objetos.
 
 Como declarar objetos y acceder a sus propiedades.
 
+*Conceptos:* `object` `.`
+
 ## 🚀 [Objetos globales](16_objetos_globales.md)
 
 Los objetos globales nos permiten acceder a funcionalidades del navegador o entorno.
 
-## 📅 [Date](21_Date.md)
+*Conceptos:* `console` `Math` `Date` `etc`
+
+## 📅 [Date](22_Date.md)
 
 El objeto Date nos permite trabajar con fechas y horas.
+
+*Conceptos:* `Date`
 
 ## 🖇️ [Metodos strings](06_metodos_strings.md)
 
 Los métodos más comunes de los strings
 
+*Conceptos:* `metodos` `string`
+
 ## 🧮 [Metodos number](07_metodos_number.md)
 
 Los métodos más comunes de los números
+
+*Conceptos:* `metodos` `number`
 
 ## 🧾 [Metodos array](17_metodos_array.md)
 
 Los métodos más comunes de los arrays
 
+*Conceptos:* `metodos` `array`
+
 ## ⏰ [Intervalos y timeouts](19_intervalos.md)
 
 Los intervalos nos permiten ejecutar una función cada cierto tiempo.
+
+*Conceptos:* `setInterval` `setTimeout` `clearInterval` `clearTimeout`
 
 ## 🌲 [DOM](20_DOM.md)
 
 El DOM (Document Object Model) es una API que nos permite acceder y modificar el contenido de un documento HTML.
 
-## 👀 [Eventos](25_eventos.md)
+*Conceptos:* `DOM` `document` `querySelector` `createElement` `innerHTML` `appendChild` `etc`
+
+## 👀 [Eventos](24_eventos.md)
 
 Los eventos nos permiten ejecutar código cuando ocurren ciertas acciones en el navegador.
+
+*Conceptos:* `addEventListener` `html events` `event handlers`
+
+## 🪄 [Crear elementos DOM](21_crear_elementos_DOM.md)
+
+Como crear elementos HTML desde JavaScript.
+
+*Conceptos:* `createElement` `appendChild`

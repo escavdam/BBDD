@@ -18,7 +18,7 @@ Crea un proyecto en tu repositorio de GitHub llamado `practica_7` y crea un `ind
 
 2. Añade un evento al botón "Evento HTML" que edite el parrafo inferior con el texto "Has hecho click en el botón con evento HTML", debes hacerlo utilizando un atributo directamente en el elemento HTML, como hemos hecho hasta ahora en clase
 
-> Para los siguientes eventos, necesitarás echar un vistazo a la referencia de [eventos](../../01_javascript_fundamentos/25_eventos.md) y también [funciones anónimas](../../01_javascript_fundamentos/18_funciones_anonimas.md)
+> Para los siguientes eventos, necesitarás echar un vistazo a la referencia de [eventos](../../01_javascript_fundamentos/24_eventos.md) y también [funciones anónimas](../../01_javascript_fundamentos/18_funciones_anonimas.md)
 >
 
 1. Añade un evento al botón "addEventListener" que edite el parrafo inferior con el texto "Has hecho click en el botón con addEventListener", debes hacerlo utilizando el método `addEventListener`.
