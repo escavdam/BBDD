@@ -31,3 +31,7 @@ Vamos a crear un clicker incremental que guarde el progreso en el navegador usan
 ## [Práctica 7](/practicas/practica_7/eventos_javascript.md)
 
 Ejercicio en el que usaremos `eventos html`, `addEventListener` y `event handlers`.
+
+## [Práctica 8](/practicas/practica_8/practica_8.md)
+
+Varios ejercicios rápidos para practicar.
