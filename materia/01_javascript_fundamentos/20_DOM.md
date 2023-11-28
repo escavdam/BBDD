@@ -159,3 +159,5 @@ La propiedad `element.className` contiene el valor del atributo `class` del elem
 ```javascript
 console.log(document.body.className)
 ```
+
+
