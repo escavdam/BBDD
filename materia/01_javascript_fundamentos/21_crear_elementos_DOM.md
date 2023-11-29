@@ -1,5 +1,9 @@
 # Crear elementos HTML mediante JavaScript
 
+[MDN createElement](https://developer.mozilla.org/es/docs/Web/API/Document/createElement)
+
+[MDN appendChild](https://developer.mozilla.org/es/docs/Web/API/Node/appendChild)
+
 En muchos casos deberemos crear elementos HTML mediante JavaScript. Esto es muy útil cuando queremos crear elementos dinámicamente, por ejemplo, cuando queremos mostrar una lista de elementos que vienen de una base de datos o introducidos por el usuario.
 
 Para esto, usaremos dos métodos del objeto `document`, `createElement` y `appendChild`:
