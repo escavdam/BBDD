@@ -119,3 +119,7 @@ Los eventos nos permiten ejecutar código cuando ocurren ciertas acciones en el 
 Como crear elementos HTML desde JavaScript.
 
 *Conceptos:* `createElement` `appendChild`
+
+## 🐛 [Debugging](27_debug.md)
+
+Aprender a encontrar y corregir errores en el código es básico, vamos a ver como depurar código.
