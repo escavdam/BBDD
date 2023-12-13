@@ -92,6 +92,12 @@ class Usuario {
 }
 
 const usuario_0 = new Usuario("Antonio", 24, "Sevilla")
+const usuario_1 = new Usuario("María", 25, "Madrid")
 console.log(usuario_0.nombre, usuario_0.edad, usuario_0.ciudad) // Antonio
+console.log(usuario_1.nombre, usuario_1.edad, usuario_1.ciudad) // María
 ```
+
+Cuando instanciamos una clase, es decir, cuando creamos un objeto a partir de una clase, se ejecuta el constructor de la clase.
+
+Al crearse el objeto, this hace referencia al objeto que se está creando.
 
