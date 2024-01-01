@@ -13,7 +13,18 @@ Algunos conceptos básicos en el mundo de internet, los datos y el desarrollo we
 
 Aspectos básicos del lenguaje JavaScript.
 
-## 🌐 [Almacenamiento de datos](./02_intercambio_datos/index.md)
+## 🌐 [Intercambio de datos](./02_intercambio_datos/index.md)
 
 Primeros pasos en el almacenamiento e intercambio de datos en web.
 
+## [Javascript Avanzado](./03_javascript_avanzado/index.md)
+
+Aspectos avanzados del lenguaje JavaScript.
+
+## [Nodejs](./04_nodejs/index.md)
+
+Nodejs es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome. Node nos permite ejecutar código JavaScript en el servidor o en nuestro ordenador local, sin necesidad de un navegador.
+
+## [SQL](./05_sql/index.md)
+
+SQL (Structured Query Language) es un lenguaje de programación diseñado para administrar y recuperar información de sistemas de gestión de bases de datos relacionales.
