@@ -13,10 +13,10 @@ Entendiendo los tipos de datos básicos de JavaScript y como almacenarlos en var
 Como declarar y asignar valores a variables en JavaScript. 
 
 *Conceptos:* `const` `var` `let`
-<!-- 
-## 😱 [Error en floats](22_error_de_floats.md)
 
-Los números en coma flotante no son exactos, aqui puedes ver formas de evitar errores. -->
+## 😱 [Error en floats](23_error_de_floats.md)
+
+Los números en coma flotante no son exactos, aqui puedes ver formas de evitar errores.
 
 ## 🛹 [Funciones declaradas](08_funciones.md)
 
@@ -119,6 +119,10 @@ Los eventos nos permiten ejecutar código cuando ocurren ciertas acciones en el 
 Como crear elementos HTML desde JavaScript.
 
 *Conceptos:* `createElement` `appendChild`
+
+## 📦 [Librerias](26_usar_librerias.md)
+
+Las librerías nos permiten reutilizar código de otras personas, vamos a ver como usarlas de una forma básica.
 
 ## 🐛 [Debugging](27_debug.md)
 
