@@ -2,6 +2,12 @@
 
 Node.js nos proporciona algunos objetos globales que nos permiten acceder a funcionalidades del sistema operativo, como el sistema de archivos, o el sistema de procesos.
 
+Para importar estos objetos, debemos usar la función `require` seguida del nombre del objeto que queremos importar.
+
+```javascript
+const os = require("os")
+```
+
 ## `console`
 
 El objeto `console` nos permite imprimir mensajes en la consola.
