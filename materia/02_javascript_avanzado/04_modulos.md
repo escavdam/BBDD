@@ -49,16 +49,5 @@ mi_modulo.nombre
 mi_modulo.saludar()
 ```
 
-## require
-
-También podemos importar módulos usando `require`, para esto debemos usar la función `require` seguida del nombre del archivo donde se encuentra el módulo.
-
-```javascript
-const mi_modulo = require("./modulo.js")
-
-mi_modulo.nombre
-mi_modulo.saludar()
-```
-
-La diferencia entre `import` y `require` es que `import` es una declaración, y `require` es una función.
+import y export se usan en el lado del cliente, en el navegador.
 
