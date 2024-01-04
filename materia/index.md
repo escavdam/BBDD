@@ -17,14 +17,14 @@ Aspectos básicos del lenguaje JavaScript.
 
 Primeros pasos en el almacenamiento e intercambio de datos en web.
 
-## [Javascript Avanzado](./03_javascript_avanzado/index.md)
+## 💪 [Javascript Avanzado](./03_javascript_avanzado/index.md)
 
 Aspectos avanzados del lenguaje JavaScript.
 
-## [Nodejs](./04_nodejs/index.md)
+## 🧰 [Nodejs](./04_nodejs/index.md)
 
 Nodejs es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome. Node nos permite ejecutar código JavaScript en el servidor o en nuestro ordenador local, sin necesidad de un navegador.
 
-## [SQL](./05_sql/index.md)
+## 🗃️ [SQL](./05_sql/index.md)
 
 SQL (Structured Query Language) es un lenguaje de programación diseñado para administrar y recuperar información de sistemas de gestión de bases de datos relacionales.
