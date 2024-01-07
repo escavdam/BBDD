@@ -17,7 +17,7 @@ Puedes añadirlo a un script de npm para ejecutarlo con `npm run dev`.
   "name": "mi_proyecto",
   "version": "1.0.0",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon index.js"
   }
 }
 ```
