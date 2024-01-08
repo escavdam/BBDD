@@ -12,8 +12,8 @@ Para crear un middleware, debemos usar el método `use` del objeto `app`. Este m
 
 ```js
 app.use((req, res, next) => {
-  console.log('Middleware ejecutado')
-  next()
+  console.log('Middleware ejecutado');
+  next();
 })
 ```
 
@@ -23,8 +23,8 @@ Podemos crear una funcion separada para el middleware:
 
 ```js
 const middleware = (req, res, next) => {
-  console.log('Middleware ejecutado')
-  next()
+  console.log('Middleware ejecutado');
+  next();
 }
 ```
 
@@ -40,7 +40,7 @@ Existen varios tipos de middleware. Los más comunes son los siguientes:
 
 ### Middleware de ruta
 
-El middleware de ruta se ejecuta antes de que se ejecute una ruta. Para crear un middleware de ruta, debemos pasarle la ruta como primer parámetro:
+El middleware de ruta se ejecuta antes de que se ejecute una ruta concreta. Para crear un middleware de ruta, debemos pasarle la ruta como primer parámetro:
 
 ```js
 app.use('/usuarios', (req, res, next) => {
