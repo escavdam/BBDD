@@ -32,7 +32,7 @@ Nodejs es un entorno de ejecución para JavaScript construido con el motor de Ja
 
 Express es un framework para Nodejs que nos permite crear aplicaciones web y APIs de forma sencilla.
 
-## [SQL](./99_sql/index.md)
+## [SQL](./99_SQL/index.md)
 >>>>>>> ffcd4d4fde0d7ebbebff930d405d4f2f53d4d084
 
 SQL (Structured Query Language) es un lenguaje de programación diseñado para administrar y recuperar información de sistemas de gestión de bases de datos relacionales.
