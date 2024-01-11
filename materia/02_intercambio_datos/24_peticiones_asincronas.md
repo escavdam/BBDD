@@ -19,6 +19,7 @@ Esto es un problema, porque si queremos hacer una petición HTTP, y tenemos que 
 
 Para solucionar esto, JavaScript usa la asincronía, que es la capacidad de hacer varias cosas a la vez, sin tener que esperar a que termine una para hacer otra.
 
+<<<<<<< HEAD
 Si alguna vez has escuchado el termino "ajax", esto es lo que significa, "asynchronous JavaScript and XML", es decir, JavaScript asíncrono y XML.
 
 Para entender bien la asincronia, debemos de tener claro el concepto de *callback*.
@@ -237,3 +238,67 @@ Esto dependerá del servidor que estés usando, por ejemplo, en Express puedes u
 
 
 
+=======
+## XMLHttpRequest
+
+XMLHttpRequest es un objeto que nos permite hacer peticiones HTTP con JavaScript. Para crear una petición, debemos crear una instancia de este objeto:
+
+```js
+const request = new XMLHttpRequest()
+```
+
+Una vez que tenemos la instancia, podemos usarla para hacer peticiones. Para ello, debemos usar el método `open`:
+
+```js
+request.open('GET', 'https://jsonplaceholder.typicode.com/users')
+```
+
+Este método recibe dos parámetros, el primero es el método HTTP que queremos usar, y el segundo es la URL a la que queremos hacer la petición.
+
+Una vez que hemos abierto la petición, podemos enviarla usando el método `send`:
+
+```js
+request.send()
+```
+
+Este método no recibe ningún parámetro, y envía la petición al servidor.
+
+Por último, podemos usar el método `onload` para recibir la respuesta del servidor:
+
+```js
+request.onload = () => {
+  console.log(request.response)
+}
+```
+
+Este método recibe una función que se ejecutará cuando el servidor responda. Esta función recibe como parámetro la respuesta del servidor.
+
+## fetch
+
+Fetch es una función que nos permite hacer peticiones HTTP con JavaScript. Para usarla, debemos pasarle la URL a la que queremos hacer la petición:
+
+```js
+fetch('https://jsonplaceholder.typicode.com/users')
+```
+
+Esta función devuelve una promesa, que podemos usar para recibir la respuesta del servidor:
+
+```js
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => {
+    console.log(response)
+  })
+```
+
+Recuerda que el objeto Response incluye un método llamado `json` que nos permite convertir la respuesta en un objeto JavaScript:
+
+```js
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => {
+    return response.json()
+  })
+  .then(data => {
+    console.log(data)
+  })
+```
+>>>>>>> e6a678616a2b6eba940669573338444d339e2dc1
