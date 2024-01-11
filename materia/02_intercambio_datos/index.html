@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola mundo</h1>
+    <p>AAAA</p>
+    <script>
+const url = "https://hhyyppeerrtteexxtt.art"
+const url1 = "https://jsonplaceholder.typicode.com/todos/1"
+
+var request = new XMLHttpRequest();
+request.open('GET', url);
+request.send();
+
+request.onload = function() {
+  console.log(request);
+  document.write(request.response);
+}
+    </script>
+</body>
+</html>
