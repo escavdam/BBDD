@@ -12,4 +12,12 @@ JSON (JavaScript Object Notation) es un formato de texto sencillo para el interc
 
 ## ⏱️ [Peticiones asíncronas](/02_intercambio_datos/24_peticiones_asincronas.md)
 
-Las peticiones asíncronas nos permiten realizar peticiones al servidor sin necesidad de recargar la página. Aprende a utilizarlas para mejorar la experiencia de usuario de tus aplicaciones.
+Las peticiones asíncronas nos permiten realizar peticiones al servidor sin detener la ejecución del resto del código. Esto nos permite crear aplicaciones más rápidas y con mejor experiencia de usuario.
+
+## 🤓 [Validación de datos](/02_intercambio_datos/25_validacion_datos.md)
+
+La validación de datos es un proceso que nos permite comprobar que los datos que recibimos son correctos. Es **clave** tanto en el lado del cliente como en el lado del servidor.
+
+## 🎳 [Modelo - Vista - Controlador (MVC)](/02_intercambio_datos/26_MVC.md)
+
+El MVC es un patrón de diseño, es decir, una forma de organizar el código de una aplicación. El MVC divide la aplicación en tres partes para facilitar su desarrollo y mantenimiento.
