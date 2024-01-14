@@ -111,3 +111,13 @@ npm publish --access public
 ```
 
 Esto subirá el módulo a NPM, y lo hará público para que cualquier persona pueda instalarlo.
+
+Una vez subido el módulo, podemos instalarlo en cualquier proyecto usando el comando `npm install` seguido del nombre del módulo.
+
+Además, dispondrás del módulo en diferentes CDN's como [unpkg](https://unpkg.com/), [jsdelivr](https://www.jsdelivr.com/) o [cdnjs](https://cdnjs.com/).
+
+Si por ejemplo tu modulo npm se llama `mi_modulo` y quieres usarlo en tu proyecto, puedes hacerlo de la siguiente manera:
+
+```html
+<script src="https://unpkg.com/mi_modulo"></script>
+```

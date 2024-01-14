@@ -31,4 +31,15 @@ Ademas, si hay un archivo llamado `index.js` o `main.js` en la carpeta actual, p
 node
 ```
 
+## global
+
+¿Recuerdas la palabra reservada `this`? Esta palabra reservada hace referencia al objeto global, según el contexto en el que se encuentre.
+
+```js
+console.log(this);
+```
+
+Según donde lances esto, te dará un resultado u otro. En el navegador, te devolverá el objeto `window`, mientras que en Node.js te devolverá el objeto `global`.
+
+Este objeto global es el equivalente al objeto `window` en el navegador, y contiene todas las variables y funciones globales que podemos usar en nuestro código. Es de donde vienen todas nuestras variables y funciones globales como `console`, `setTimeout`, `setInterval`, `clearTimeout`, `clearInterval`, `require`, `exports`, etc.
 
