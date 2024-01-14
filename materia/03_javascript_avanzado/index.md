@@ -30,6 +30,6 @@ Las promesas son objetos que representan un valor que puede estar disponible aho
 
 El objeto `Response` representa la respuesta a una petición HTTP.
 
-## 🌎 [GeoLocation](./07_geolocation.md)
+## 🌎 [GeoLocation](./07_navigator_geolocation.md)
 
 El objeto `GeoLocation` nos permite obtener la ubicación del usuario.
