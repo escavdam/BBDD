@@ -18,10 +18,6 @@ Los arrays tienen varios métodos que nos permiten modificarlos o crear nuevos d
 
 Los prototipos son un mecanismo que nos permite agregar propiedades y métodos a los objetos. Además, JS está basado en prototipos, por lo que entenderlos es fundamental para entender el lenguaje.
 
-## ⚡ [Modulos](./04_modulos.md)
-
-Los módulos nos permiten dividir nuestro código en archivos separados, y luego importarlos en otros archivos.
-
 ## 🙏 [Promesas](./05_promesas.md)
 
 Las promesas son objetos que representan un valor que puede estar disponible ahora, en el futuro, o nunca.

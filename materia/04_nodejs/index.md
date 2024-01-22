@@ -6,7 +6,7 @@ Nodejs es un entorno de ejecución para JavaScript que nos permite ejecutar cód
 
 Instalación y primeros pasos con Nodejs.
 
-## [Módulos globales](./01_modulos_globales.md)
+## [Módulos](./01_modulos.md)
 
 Nodejs viene con una serie de módulos globales que nos permiten realizar tareas comunes.
 
@@ -14,14 +14,18 @@ Nodejs viene con una serie de módulos globales que nos permiten realizar tareas
 
 El módulo `fs` nos permite trabajar con el sistema de archivos del sistema operativo. Podemos crear, leer, actualizar y eliminar archivos y directorios.
 
-## [http](./03_http.md)
+## [os](./03_os.md)
+
+El módulo `os` nos permite obtener información del sistema operativo. Podemos obtener información sobre el procesador, la memoria, el sistema de archivos, etc.
+
+## [http](./04_http.md)
 
 El módulo `http` nos permite crear servidores web en Nodejs. Podemos usarlo para crear un servidor web que responda a las peticiones de los clientes.
 
-## [npm](./04_npm.md)
+## [npm](./10_npm.md)
 
 NPM (Node Package Manager) es un gestor de paquetes para Nodejs. Podemos usarlo para instalar paquetes de terceros, y para compartir nuestros proyectos con otras personas.
 
-## [nodemon](./05_nodemon.md)
+## [nodemon](./10_nodemon.md)
 
 Nodemon es una herramienta que nos permite reiniciar automáticamente nuestra aplicación cuando detecta cambios en los archivos.

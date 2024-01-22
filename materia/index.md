@@ -1,10 +1,6 @@
 # BBDD
 En *Bases de datos* tratareis principalmente con el backend de las aplicaciones, es decir, con la parte que se encarga de almacenar, recuperar datos, procesarlos y servir respuestas al cliente.
 
-## ⚒️ [Prácticas](./practicas/index.md)
-
-Ejercicios de clase y casa para practicar.
-
 ## 🐤 [Introduccion](./00_introduccion/index.md)
 
 Algunos conceptos básicos en el mundo de internet, los datos y el desarrollo web.
@@ -29,6 +25,10 @@ Nodejs es un entorno de ejecución para JavaScript construido con el motor de Ja
 
 Express es un framework para Nodejs que nos permite crear aplicaciones web y APIs de forma sencilla.
 
-## 🗃️ [SQL](./99_sql/index.md)
+## 🍃 [MongoDB](./99_mongoDB/index.md)
+
+MongoDB es una base de datos noSQL orientada a documentos. Es **muy** similar a trabajar con JSON, por lo que es muy fácil de usar.
+
+## 🗃️ [SQL](./99_SQL/index.md)
 
 SQL (Structured Query Language) es un lenguaje de programación diseñado para administrar y recuperar información de sistemas de gestión de bases de datos relacionales.
