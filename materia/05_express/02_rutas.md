@@ -1,38 +1,52 @@
 # Rutas
 
-En express podemos crear rutas usando el método `get`:
+Una ruta o endpoint en Express es una URL que el servidor puede manejar y al que se puede llamar. Por ejemplo, `/usuarios` es una ruta, igual que `/`, `/tienda` o `/usuarios/1`.
+
+Cada una de estas rutas puede manejar diferentes tipos de peticiones, como `GET`, `POST`, `PUT`, `PATCH`, y `DELETE`.
 
 ```js
-app.get('/', (req, res) => {
+app.get('/', (req, res) => { 
   res.send('Hola mundo')
 })
-```
 
-Este método recibe dos parámetros: la ruta, y un callback que se ejecutará cuando se visite la ruta.
-
-En este callback podemos usar los objetos `req` y `res` para manejar la petición y la respuesta.
-
-## Respuestas
-
-Podemos mandar cualquier tipo de dato en la respuesta. Por ejemplo, podemos mandar un objeto:
-
-```js
-app.get('/', (req, res) => {
-  res.send({ mensaje: 'Hola mundo' })
+app.get('/usuarios', (req, res) => {
+  res.send('Lista de usuarios')
 })
 ```
 
-O un array:
+Estos métodos reciben dos parámetros: la ruta, y un callback que se ejecutará cuando se visite la ruta.
+
+En este callback podemos usar los objetos `req` y `res` para manejar la petición que entra al servidor y la respuesta que vamos a devolver.
+
+## Métodos http
+
+Cada ruta puede manejar diferentes tipos de peticiones, como `GET`, `POST`, `PUT`, `PATCH`, y `DELETE`.
+
+Podemos utilizar diferentes métodos en la misma ruta:
 
 ```js
-app.get('/', (req, res) => {
-  res.send([1, 2, 3])
+app.get('/usuarios', (req, res) => { 
+  res.send('Muestra los usuarios')
+})
+
+app.post('/usuarios', (req, res) => {
+  res.send('Crea un usuario')
+})
+
+app.put('/usuarios', (req, res) => {
+  res.send('Actualiza un usuario')
+})
+
+app.patch('/usuarios', (req, res) => {
+  res.send('Actualiza un usuario')
+})
+
+app.delete('/usuarios', (req, res) => {
+  res.send('Elimina un usuario')
 })
 ```
 
-No es necesario convertir los datos a JSON, Express lo hace automáticamente.
-
-
+Cada verbo http tiene un significado específico, y podemos usarlos para manejar diferentes tipos de peticiones, aun asi, los métodos http no cambian el comportamiento de la ruta en si, depende de nosotros como desarrolladores manejar la petición que se este realizando.
 
 ## Rutas con parámetros
 
@@ -88,7 +102,7 @@ Recordemos los verbos HTTP:
 - `PATCH`: Actualizar un recurso.
 - `DELETE`: Eliminar un recurso.
 
-## Rutas post
+### Rutas post
 
 Podemos crear rutas post usando el método `post`:
 
@@ -98,7 +112,7 @@ app.post('/usuarios', (req, res) => {
 })
 ```
 
-## Rutas put
+### Rutas put
 
 Podemos crear rutas put usando el método `put`:
 
@@ -108,7 +122,7 @@ app.put('/usuarios/:id', (req, res) => {
 })
 ```
 
-## Rutas patch
+### Rutas patch
 
 Podemos crear rutas patch usando el método `patch`:
 
@@ -118,7 +132,7 @@ app.patch('/usuarios/:id', (req, res) => {
 })
 ```
 
-## Rutas delete
+### Rutas delete
 
 Podemos crear rutas delete usando el método `delete`:
 
@@ -127,6 +141,30 @@ app.delete('/usuarios/:id', (req, res) => {
   res.send(`Usuario ${req.params.id} eliminado`)
 })
 ```
+## Envio de datos por URL
 
-**Recordad** que los verbos http no cambian el comportamiento de la ruta en si, solo responden según la petición que se haga y nos ayudan a identificar que tipo de petición se esta realizando.
+### Query strings
 
+Las query strings son una forma de enviar datos a través de la URL. Por ejemplo, en la URL `/usuarios?id=1`, el valor del query string `id` es `1`.
+
+Los query strings se crean usando `?`, y se pueden concatenar con `&`, y para acceder a ellos en Express, podemos usar `req.query`.
+
+
+```js
+app.get('/usuarios', (req, res) => {
+  res.send(`El id del usuario es ${req.query.id}`)
+})
+```
+Los query strings pueden ser potencialmente peligrosos, ya que pueden ser manipulados por el usuario. Por esta razón, es importante validar y sanitizar los datos antes de usarlos, las *inyecciones* de SQL son un ejemplo de como los query strings pueden ser peligrosos.
+
+### Rutas con parámetros
+
+Los parámetros son una forma de enviar datos a través de la URL. Por ejemplo, en la URL `/usuarios/1`, el valor del parámetro `id` es `1`.
+Podemos crear rutas con parámetros usando `:`:
+
+```js
+app.get('/usuarios/:id', (req, res) => {
+  res.send(`El id del usuario es ${req.params.id}`)
+})
+```
+Esta forma de enviar datos es más segura que los query strings, ya que los parámetros no son tan faciles de manipular, aun asi, es importante validar y sanitizar los datos antes de usarlos.
