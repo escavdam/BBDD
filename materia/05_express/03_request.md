@@ -122,7 +122,16 @@ Algunas de las cabezeras más comunes son:
 - `User-Agent`: El agente de usuario que está haciendo la petición, como el navegador o el bot que está haciendo la petición.
 - `Referer`: La URL de la página que hizo la petición.
 
-Podemos acceder a las cabeceras de la petición en Express a través de la propiedad `req.headers`. 
+Podemos acceder a las cabeceras de la petición en Express a través de la propiedad `req.headers`.
+
+### get
+
+El método `get` nos permite obtener el valor de una cabecera.
+
+```js
+req.get('Content-Type')
+req.get('Content-Length')
+```
 
 ## Cookies
 
@@ -166,4 +175,4 @@ Algunas de las opciones extra que tenemos al guardar cookies son:
 
 Las cookies no son un método seguro para almacenar información sensible, ya que pueden ser manipuladas por el usuario. Por esta razón, es importante no almacenar información sensible en las cookies, y siempre validar y sanitizar los datos antes de usarlos.
 
-**NO** uses cookies para autenticar usuarios, es peligroso, y quedarán limitadas por la mayoria de navegadores.
+**NO** uses cookies para autenticar usuarios, es peligroso, y quedarán limitadas por la mayoria de navegadores muy pronto.

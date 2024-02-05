@@ -1,23 +1,24 @@
 # Middleware
 
-Por defecto, express no sabe cómo procesar los datos que vienen en una petición. Esto es debido a que dependiendo del tipo de petición, los datos se envían de una forma u otra. Por ejemplo, en una petición `GET` los datos se envían en la URL, mientras que en una petición `POST` los datos se envían en el cuerpo de la petición. 
+Un middleware es una función que se ejecuta **antes** de que se ejecute la ruta. Los middlewares se ejecutan en orden, y pueden modificar los datos de la petición antes de que se ejecute la ruta.
 
-Además, express no sabe cómo procesar los datos que vienen en el cuerpo de la petición. Por ejemplo, si enviamos un formulario, express no sabe cómo procesar los json que llegan.
+Los middlewares son clave en nuestro servidor express, ya que estos nos permiten preprocesar los datos que vienen en la petición.
 
-Para solucionar esto, express usa middlewares. Un middleware es una función que se ejecuta antes de que se ejecute la ruta. Los middlewares se ejecutan en orden, y pueden modificar los datos de la petición antes de que se ejecute la ruta.
+Sin los middleware, no podremos acceder a los datos que vienen en la petición, ya que estos se encuentran en el objeto `req`, y si no los procesamos, express no sabrá cómo manejarlos.
 
 ## Crear un middleware
 
-Para crear un middleware, debemos usar el método `use` del objeto `app`. Este método recibe un callback que se ejecutará antes de que se ejecute la ruta.
+Un middleware es una función que recibe 3 parámetros: `req`, `res` y `next`. `req` es el objeto de la petición, `res` es el objeto de la respuesta, y `next` es una función que le dice a express que ejecute la siguiente función. El método `use` le dice a express que ejecute el middleware antes de que se ejecute cualquier ruta.
 
 ```js
+//middleware como función anónima
 app.use((req, res, next) => {
   console.log('Middleware ejecutado');
   next();
 })
 ```
 
-En este ejemplo, creamos un middleware que se ejecuta antes de que se ejecute cualquier ruta. Este middleware imprime un mensaje en la consola, y luego llama a `next()`. `next()` es una función que le dice a express que ejecute la siguiente función. En este caso, la siguiente función es la ruta.
+En este ejemplo, creamos un middleware que se ejecuta antes de que se ejecute cualquier ruta mediante `app.use`. Este middleware imprime un mensaje en la consola, y luego llama a `next()`. `next()` es una función que le dice a express que ejecute la siguiente función. Cuando usamos next en un middleware, le estamos diciendo a express que ejecute la ruta.
 
 Podemos crear una funcion separada para el middleware:
 
@@ -28,10 +29,68 @@ const middleware = (req, res, next) => {
 }
 ```
 
-Y luego usarla en el método `use`:
+### Middleware en todas las rutas
+
+Una vez tengas el middleware, puedes usarlo en todas las rutas de tu aplicación con el método `use` del objeto `app`:
 
 ```js
-app.use(middleware)
+function middleware (req, res, next) {
+  console.log('Middleware ejecutado')
+  next()
+}
+app.use('*', middleware)
+```
+
+Un ejemplo sencillo con un logger:
+
+```js
+const logger = (req, res, next) => {
+  console.log('Logging route:', req.path);
+  console.log('Request Time:', new Date().toString())
+  console.log('User Agent:', req.useragent)
+  console.log('Request Type:', req.method)
+  console.log('Request IP:', req.ip)
+  console.log('~'.repeat(8))
+  next();
+}
+app.use('*', logger);
+```
+
+### Usar un middleware en una ruta concreta
+
+También puedes usar un middleware en una ruta concreta:
+
+```js
+function middleware (req, res, next) {
+  console.log('Middleware ejecutado')
+  next()
+}
+app.get('/usuarios', middleware, (req, res) => {
+  res.send('Ruta con middleware')
+})
+```
+
+### Múltiples middlewares
+
+También puedes usar múltiples middlewares en una ruta:
+
+```js
+app.get('/usuarios', middleware1, middleware2, (req, res) => {
+  res.send('Ruta con múltiples middlewares')
+})
+```
+
+### Múltiples callbacks
+
+También puedes usar múltiples callbacks en una ruta, en este caso, el primer callback es un middleware, el segundo callback es la ruta. Luego, mediante `next()` se ejecuta un tercer callback.
+
+```js
+app.get('/usuarios', (req, res, next) => {
+  console.log('Middleware 1')
+  next()
+}, (req, res) => {
+  res.send('Ruta con múltiples callbacks')
+})
 ```
 
 ## Tipos de middleware

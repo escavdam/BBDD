@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
 app.get('/usuarios', (req, res) => {
   res.send('Lista de usuarios')
 })
+
+app.post('/usuarios', (req, res) => {
+  res.send('Creamos usuario usuarios')
+})
 ```
 
 Estos métodos reciben dos parámetros: la ruta, y un callback que se ejecutará cuando se visite la ruta.
@@ -68,103 +72,53 @@ app.get('/usuarios/:id/:nombre', (req, res) => {
 })
 ```
 
-## Rutas con query strings
+## Rutas con comodines
 
-Podemos crear rutas con query strings usando `?`:
+Podemos crear rutas con comodines usando `*`:
 
 ```js
-app.get('/usuarios', (req, res) => {
-  res.send(`El id del usuario es ${req.query.id}`)
+app.get('/usuarios/*', (req, res) => {
+  res.send('Ruta con comodín')
 })
 ```
 
-En la url `/usuarios?id=1`, el valor del query string `id` es `1`. Para acceder al valor del query string, podemos usar `req.query.id`.
+En este ejemplo, creamos una ruta que recibe cualquier ruta que empiece con `/usuarios/`, como `/usuarios/1`, `/usuarios/2`, `/usuarios/3`, pero tambien `/usuarios/1/editar`, `/usuarios/2/borrar`, `/usuarios/3/hola`, etc.
 
-Podemos crear rutas con varios query strings:
+## Rutas con expresiones regulares
+
+Podemos crear rutas con expresiones regulares usando `()`:
 
 ```js
-app.get('/usuarios', (req, res) => {
-  res.send(`El id del usuario es ${req.query.id}, y su nombre es ${req.query.nombre}`)
+app.get(/\/usuarios\/[0-9]+/, (req, res) => {
+  res.send('Ruta con expresión regular')
 })
 ```
 
-Aqui, la ruta `/usuarios?id=1&nombre=Juan` tiene el query string `id` con el valor `1`, y el query string `nombre` con el valor `Juan`.
+En este ejemplo, creamos una ruta que recibe cualquier ruta que empiece con `/usuarios/` seguido de un número, como `/usuarios/1`, `/usuarios/2`, `/usuarios/3`, pero no `/usuarios/1/editar`, `/usuarios/2/borrar`, `/usuarios/3/hola`, etc.
 
-## Rutas con métodos
+## Rutas con middleware
 
-Hasta ahora hemos usado el método `get` para crear rutas. Pero también podemos usar otros métodos, como `post`, `put`, `patch`, y `delete`.
-
-Recordemos los verbos HTTP:
-
-- `GET`: Obtener un recurso.
-- `POST`: Crear un recurso.
-- `PUT`: Reemplazar un recurso.
-- `PATCH`: Actualizar un recurso.
-- `DELETE`: Eliminar un recurso.
-
-### Rutas post
-
-Podemos crear rutas post usando el método `post`:
+Podemos crear rutas con middleware:
 
 ```js
-app.post('/usuarios', (req, res) => {
-  res.send('Usuario creado')
+app.get('/usuarios', middleware, (req, res) => {
+  res.send('Ruta con middleware')
 })
 ```
 
-### Rutas put
+En este ejemplo, creamos una ruta que recibe un middleware antes de ejecutar el callback. El middleware puede ser una función que nosotros mismos creamos, o un middleware que ya viene incluido en Express.
 
-Podemos crear rutas put usando el método `put`:
+## Rutas con múltiples callbacks
+
+Podemos crear rutas con múltiples callbacks:
 
 ```js
-app.put('/usuarios/:id', (req, res) => {
-  res.send(`Usuario ${req.params.id} actualizado`)
+app.get('/usuarios', (req, res, next) => {
+  console.log('Middleware 1')
+  next()
+}, (req, res) => {
+  res.send('Ruta con múltiples callbacks')
 })
 ```
 
-### Rutas patch
-
-Podemos crear rutas patch usando el método `patch`:
-
-```js
-app.patch('/usuarios/:id', (req, res) => {
-  res.send(`Usuario ${req.params.id} actualizado`)
-})
-```
-
-### Rutas delete
-
-Podemos crear rutas delete usando el método `delete`:
-
-```js
-app.delete('/usuarios/:id', (req, res) => {
-  res.send(`Usuario ${req.params.id} eliminado`)
-})
-```
-## Envio de datos por URL
-
-### Query strings
-
-Las query strings son una forma de enviar datos a través de la URL. Por ejemplo, en la URL `/usuarios?id=1`, el valor del query string `id` es `1`.
-
-Los query strings se crean usando `?`, y se pueden concatenar con `&`, y para acceder a ellos en Express, podemos usar `req.query`.
-
-
-```js
-app.get('/usuarios', (req, res) => {
-  res.send(`El id del usuario es ${req.query.id}`)
-})
-```
-Los query strings pueden ser potencialmente peligrosos, ya que pueden ser manipulados por el usuario. Por esta razón, es importante validar y sanitizar los datos antes de usarlos, las *inyecciones* de SQL son un ejemplo de como los query strings pueden ser peligrosos.
-
-### Rutas con parámetros
-
-Los parámetros son una forma de enviar datos a través de la URL. Por ejemplo, en la URL `/usuarios/1`, el valor del parámetro `id` es `1`.
-Podemos crear rutas con parámetros usando `:`:
-
-```js
-app.get('/usuarios/:id', (req, res) => {
-  res.send(`El id del usuario es ${req.params.id}`)
-})
-```
-Esta forma de enviar datos es más segura que los query strings, ya que los parámetros no son tan faciles de manipular, aun asi, es importante validar y sanitizar los datos antes de usarlos.
+En este ejemplo, creamos una ruta que recibe dos callbacks. El primer callback es un middleware que se ejecuta antes de ejecutar el segundo callback.

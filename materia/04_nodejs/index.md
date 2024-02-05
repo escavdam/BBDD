@@ -14,6 +14,10 @@ Nodejs viene con una serie de módulos globales que nos permiten realizar tareas
 
 El módulo `fs` nos permite trabajar con el sistema de archivos del sistema operativo. Podemos crear, leer, actualizar y eliminar archivos y directorios.
 
+## [path](./path.md)
+
+El módulo `path` nos permite trabajar con rutas de archivos y directorios. Nos ayuda a solucionar varios problemas comunes.
+
 ## [os](./03_os.md)
 
 El módulo `os` nos permite obtener información del sistema operativo. Podemos obtener información sobre el procesador, la memoria, el sistema de archivos, etc.

@@ -74,9 +74,12 @@ Indica las cookies que se envían al servidor. Las cookies son pequeños archivo
 
 Aunque al principio se usaban para almacenar información sobre el usuario, hoy en día se usan para almacenar información sobre la sesión del usuario. Por ejemplo, el identificador de la sesión.
 
-Si queremos almacenar información sobre el usuario o la sesión, es mejor usar el almacenamiento local o las sesiones de Express.
+Si queremos almacenar información sobre el usuario o la sesión, es mejor usar el almacenamiento local o las sesiones de Express, las cookies están prácticamente obsoletas.
 
 ### Set-Cookie
 
-Indica las cookies que se envían al cliente. Las cookies son pequeños archivos que se almacenan en el navegador y que se envían al servidor con cada petición. Se usan para almacenar información sobre el usuario.
+Indica las cookies que se envían al cliente.
+
+## Métodos
+
 

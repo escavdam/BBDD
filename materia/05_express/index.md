@@ -14,13 +14,14 @@ Crear un servidor web con Express y dejarlo escuchando en un puerto.
 
 Crear rutas en Express.
 
-## [Peticiones http](./03_peticiones_http.md)
 
-Obtener datos de las peticiones http.
+## [Requests](./03_request.md)
 
-## [Requests y responses](./04_request_response.md)
+Cómo manejar las peticiones que llegan al servidor.
 
-Podemos capturar las peticiones y devolver respuestas personalizadas.
+## [Response](./04_response.md)
+
+Cómo enviar respuestas al cliente.
 
 ## [Middleware](./05_middleware.md)
 
