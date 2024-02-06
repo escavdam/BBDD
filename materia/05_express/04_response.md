@@ -86,10 +86,64 @@ res.remove('Content-Type')
 
 Podemos usar `remove` para eliminar una cabecera que no queremos enviar al cliente y que se ha establecido por defecto.
 
-### has
+### json
 
-El método `has` nos permite comprobar si una cabecera existe.
+El método `json` nos permite enviar una respuesta en formato JSON.
 
 ```js
-req.has('Content-Type') //si existe devuelve true
+app.get('/json', (req, res) => {
+  res.json({ mensaje: 'Hola mundo' })
+})
+```
+
+Para usarla, necesitaremos configurar el middleware `express.json` en nuestra app previamente.
+
+### sendFile
+
+El método `sendFile` nos permite enviar un archivo al cliente.
+
+```js
+app.get('/archivo', (req, res) => {
+  res.sendFile('/ruta/a/mi/archivo.txt')
+})
+```
+
+### download
+
+El método `download` nos permite enviar un archivo al cliente para que lo descargue.
+
+```js
+app.get('/descargar', (req, res) => {
+  res.download('/ruta/a/mi/archivo.txt')
+})
+```
+
+### end
+
+El método `end` nos permite finalizar la respuesta.
+
+```js
+app.get('/end', (req, res) => {
+  res.end()
+})
+```
+
+### write
+
+El método `write` nos permite escribir una respuesta en el cuerpo de la respuesta, pudiendo separar la respuesta en varias partes.
+
+```js
+app.get('/write', (req, res) => {
+  res.write('Hola')
+  res.write(' mundo')
+  res.end()
+})
+```
+
+### writeHead
+
+El método `writeHead` nos permite escribir la cabecera de la respuesta.
+
+```js
+res.writeHead(200, { 'Content-Type': 'text/plain' })
 ```

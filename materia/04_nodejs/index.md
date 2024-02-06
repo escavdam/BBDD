@@ -33,3 +33,7 @@ NPM (Node Package Manager) es un gestor de paquetes para Nodejs. Podemos usarlo 
 ## [nodemon](./10_nodemon.md)
 
 Nodemon es una herramienta que nos permite reiniciar automáticamente nuestra aplicación cuando detecta cambios en los archivos.
+
+## [dotenv](./dotenv.md)
+
+Dotenv nos deja crear variables de entorno ocultas y personalizadas en cada aplicación, son importantes para proteger datos que no queremos revelar a los usuarios.

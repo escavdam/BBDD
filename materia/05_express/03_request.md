@@ -121,6 +121,7 @@ Algunas de las cabezeras más comunes son:
 - `Host`: El nombre del host al que se está haciendo la petición.
 - `User-Agent`: El agente de usuario que está haciendo la petición, como el navegador o el bot que está haciendo la petición.
 - `Referer`: La URL de la página que hizo la petición.
+- `Accept`: El tipo de respuesta que el cliente espera recibir.
 
 Podemos acceder a las cabeceras de la petición en Express a través de la propiedad `req.headers`.
 
