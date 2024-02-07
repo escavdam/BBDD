@@ -30,6 +30,14 @@ Los Routers nos dejan agrupar rutas de nuestro servidor en archivos separados.
 
 Los middlewares son funciones que se ejecutan antes de que se ejecute la ruta.
 
+### [Morgan](./05_morgan.md)
+
+Morgan es un middleware que nos permite hacer logging de las peticiones HTTP que recibimos.
+
+### [Static](./05_static.md)
+
+El middleware estático es un middleware que se utiliza para servir archivos estáticos, como archivos HTML, imágenes, CSS y JavaScript.
+
 ## [Vistas](./06_views.md)
 
 Las vistas son archivos que contienen código HTML y Javascript, pueden renderizarse en el propio servidor.

@@ -10,7 +10,7 @@ Sin los middleware, no podremos acceder a los datos que vienen en la petición, 
 
 Un middleware es una función que recibe 3 parámetros: `req`, `res` y `next`. `req` es el objeto de la petición, `res` es el objeto de la respuesta, y `next` es una función que le dice a express que ejecute la siguiente función. El método `use` le dice a express que ejecute el middleware antes de que se ejecute cualquier ruta.
 
-```js
+```js //cambiar
 //middleware como función anónima
 app.use((req, res, next) => {
   console.log('Middleware ejecutado');
@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 })
 ```
 
-En este ejemplo, creamos un middleware que se ejecuta antes de que se ejecute cualquier ruta mediante `app.use`. Este middleware imprime un mensaje en la consola, y luego llama a `next()`. `next()` es una función que le dice a express que ejecute la siguiente función. Cuando usamos next en un middleware, le estamos diciendo a express que ejecute la ruta.
+En este ejemplo, creamos un middleware que se ejecuta antes de que se ejecute cualquier ruta mediante `app.use`. Este middleware imprime un mensaje en la consola, y luego llama a `next()`. `next()` es una función que le dice a express que ejecute la siguiente función. Cuando usamos next en un middleware, le estamos diciendo a express que ejecute la ruta. //simplificar
 
 Podemos crear una funcion separada para el middleware:
 
@@ -27,7 +27,10 @@ const middleware = (req, res, next) => {
   console.log('Middleware ejecutado');
   next();
 }
+
+app.use(middleware);
 ```
+cd
 
 ### Middleware en todas las rutas
 
@@ -92,23 +95,6 @@ app.get('/usuarios', (req, res, next) => {
   res.send('Ruta con múltiples callbacks')
 })
 ```
-
-## Tipos de middleware
-
-Existen varios tipos de middleware. Los más comunes son los siguientes:
-
-### Middleware de ruta
-
-El middleware de ruta se ejecuta antes de que se ejecute una ruta concreta. Para crear un middleware de ruta, debemos pasarle la ruta como primer parámetro:
-
-```js
-app.use('/usuarios', (req, res, next) => {
-  console.log('Middleware ejecutado')
-  next()
-})
-```
-
-En este ejemplo, creamos un middleware de ruta que se ejecuta antes de que se ejecute la ruta `/usuarios`.
 
 ### Middleware de error
 
